@@ -1,49 +1,37 @@
 //Business Logic for ticket
-function Ticket(userAge, userTime, userMovie){
-    this.userAge = userAge;
-    this.userTime = userTime;
-    this.userMovie = userMovie;
+
+function Ticket(age, time, movie){
+    this.age = age;
+    this.time = time;
+    this.movie = movie;
     
 }
 
 Ticket.prototype.ticketCost = function() {
   var price = 0;
 
-  if (this.userAge === "mantiee" && this.userTime === "am") {
-    price += 20;
-    console.log(price);
+  if (this.age === "mantiee" && this.time === "am") {
+    price = 20;
+    console.log("wow");
 
-  } else if ((this.userAge === "senior" || this.userAge === "kids") && this.userTime === "am"){
-    price += 10;
+  } else if ((this.age === "senior" || this.age === "kids") && this.time === "am"){
+    price = 10;
 
-  } else if (this.userAge === "mantiee" && this.userTime === "pm") {
-    price += 25;
-  } else if ((this.this.userAge === "senior" || this.userAge === "kids") && this.userTime === "pm") {
-    price += 15;
-  }
+  } else if (this.age === "mantiee" && this.time === "pm") {
+    price = 25;
+  } else if ((this.age === "senior" || this.age === "kids") && this.time === "pm") {
+    price = 15;
+  } 
+
+  // if (this.userAge == "mantiee"){
+  //   console.log("bow");
+  // }
   
-  
-return ("At " + this.Time + "you gonna see " + this.Movie + "." + "Your ticket cost is: " + price);
+return ("In " + this.time + " you gonna see " + this.movie + "." + "Your ticket cost is: " + price);
+
 
  
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -58,23 +46,21 @@ $(document).ready(function(){
     var userMovie = $("#movie").val();
     console.log(userTime, userAge, userMovie);
     
+  
+    
     //empty fields after submission
     $("#time").val('');
     $("#age").val('');
     $("#movie").val('');
 
-    var userTicket = new Ticket (userTime, userAge, userMovie);
+    var userTicket = new Ticket (userAge, userTime, userMovie);
+    console.log(userTicket.ticketCost());
+    
+    $("#ticket").append(userTicket.ticketCost());
+    $("#ticket").show();
 
   })
     
-
-
-
-
-
-
-
-
 
 
 

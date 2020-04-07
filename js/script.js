@@ -10,16 +10,16 @@ function Ticket(age, time, movie){
 Ticket.prototype.ticketCost = function() {
   var price = 0;
 
-  if (this.age === "mantiee" && this.time === "am") {
+  if (this.age === "mantiee" && this.time === "AM") {
     price = 20;
     console.log("wow");
 
-  } else if ((this.age === "senior" || this.age === "kids") && this.time === "am"){
+  } else if ((this.age === "senior" || this.age === "kids") && this.time === "AM"){
     price = 10;
 
-  } else if (this.age === "mantiee" && this.time === "pm") {
+  } else if (this.age === "mantiee" && this.time === "PM") {
     price = 25;
-  } else if ((this.age === "senior" || this.age === "kids") && this.time === "pm") {
+  } else if ((this.age === "senior" || this.age === "kids") && this.time === "PM") {
     price = 15;
   } 
 
@@ -27,7 +27,7 @@ Ticket.prototype.ticketCost = function() {
   //   console.log("bow");
   // }
   
-return ("In " + this.time + " you gonna see " + this.movie + "." + "Your ticket cost is: " + price);
+return ("In the " + this.time + " you gonna see " + this.movie + "." + "Your ticket cost is: $" + price);
 
 
  
@@ -61,7 +61,6 @@ $(document).ready(function(){
 
   })
     
-
 
 
 })

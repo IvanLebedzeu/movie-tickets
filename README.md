@@ -14,13 +14,12 @@
 * Navigate to index.html file.
 * Right click and open in the browser of your choice.
 
-* Alternatively, open the webpage at 
 
-## specs
-1. Click on any specific place,all attribute will show up.
-2. Example Input=Mexico
-   Output:Tulum, Chichen itza,Feb 18,2020,Chichén Itzá is a complex of Mayan ruins on Mexico's Yucatán Peninsula.  
 
+## Spec
+1. User should be able to use "age", "time" and "movie" dropdowns. All three are active and can be filled out calculate the price.
+2. Example Input= Am, Kid, Bloodshoot
+   Output: In the AM, you gunna see Bloodshot. Your ticket cost is: $10 (depends on user input)
 
 ## Known Bugs
 

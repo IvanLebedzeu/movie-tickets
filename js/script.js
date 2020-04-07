@@ -27,7 +27,7 @@ Ticket.prototype.ticketCost = function() {
   //   console.log("bow");
   // }
   
-return ("In the " + this.time + " you gonna see " + this.movie + "." + "Your ticket cost is: $" + price);
+return ("In the " + this.time + ", you gonna see " + this.movie + "." + "Your ticket cost is: $" + price);
 
 
  

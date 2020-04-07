@@ -1,43 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="stylesheet" href="/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <script src="/js/jquery-3.4.1.js"></script>
     <script src="/js/script.js"></script>
     <title>Movie Ticket</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Central Cinema</h1>
+      <img
+        src="https://m.media-amazon.com/images/M/MV5BYjA5YjA2YjUtMGRlNi00ZTU4LThhZmMtNDc0OTg4ZWExZjI3XkEyXkFqcGdeQXVyNjUyNjI3NzU@._V1_.jpg" alt=""srcset=""/>
+      
+        <form id="formOne">
+          <label for="time">Choose a time</label>
+          <select name="time" id="time">
+            <option value="am">AM</option>
+            <option value="pm">PM</option>
+          </select>
+         <div>
+          <label for="age">Choose your age</label>
+          <select name="age" id="age">
+            <option value="mantiee">Mantiee</option>
+            <option value="senior">Senior</option>
+            <option value="kids">Kids</option>
+          </select>
+        </div>
+          <label for="age">Choose a Movie</label>
+          <select name="age" id="age">
+            <option value="newMovie">Bloodshot</option>
+            <option value="oldMovie">Robockop</option>
+            <option value="artHouseMovie">Serbian Vase</option>
+          </select>
+          <br>
+          <button>Submit</button>
+        </form>
+   
 
-<div class="container">
-    <img src="https://m.media-amazon.com/images/M/MV5BYjA5YjA2YjUtMGRlNi00ZTU4LThhZmMtNDc0OTg4ZWExZjI3XkEyXkFqcGdeQXVyNjUyNjI3NzU@._V1_.jpg" alt="" srcset="">
-    <div id="newRelease">
-        
-        <button>AM</button> <button>PM</button>
-        <button>Mantinee</button> <button>Senior</button>
+      <h3 id="total"></h3>
     </div>
-
-    <h3>Total:</h3>
-
-
-
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-    
-</body>
+  </body>
 </html>
+
+<!-- <select class="form-control" id="gender">
+  <option>Male</option>
+  <option>Female</option>
+  <option>Bigender</option>
+  <option>I prefere not to answer</option>
+</select> -->
